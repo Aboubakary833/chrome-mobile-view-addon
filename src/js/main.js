@@ -1,10 +1,39 @@
 import Screen from "./Screen.js";
   
 customElements.define('x-screen', Screen)
+init()
 
-const select = document.getElementById('vw_select')
-const input = document.getElementById('vw_input')
-const initScreen = document.createElement('x-screen')
-let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+async function init() {
+    const select = document.getElementById('vw_select')
+    const input = document.getElementById('vw_input')
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
+    let width = 320
 
-console.log(tab.url);
+    refresh(width, )
+
+    select.addEventListener('change', function() {
+        if(this.value) width = this.value
+        input.value = width
+    })
+
+    input.addEventListener('change', function() {
+        if(this.value < 320) {
+            console.error("Width can't be les than 320px.");
+        } else {
+            width = this.value
+        }
+    })
+}
+
+function refresh(width, url) {
+
+    if(url.startWith("chrome://")) {
+        // Show error message in the screen
+    }
+
+    const container = document.getElementById('container')
+    const screen = document.createElement('x-screen')
+    screen.setAttribute('width', width)
+    screen.setAttribute('url', url)
+    container.innerHTML = screen.outerHTML
+}
