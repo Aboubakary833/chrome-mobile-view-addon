@@ -1,11 +1,10 @@
-class Screen extends HTMLElement {
-    constructor() {
-      super()
-    }
+import Screen from "./Screen.js";
   
-    connectedCallback() {
-      this.innerHTML = "Hello world"
-    }
-  }
-  
-  customElements.define('x-screen', Screen)
+customElements.define('x-screen', Screen)
+
+const select = document.getElementById('vw_select')
+const input = document.getElementById('vw_input')
+const initScreen = document.createElement('x-screen')
+let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+console.log(tab.url);

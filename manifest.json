@@ -1,12 +1,12 @@
 {
     "name": "Mobile view",
-    "description": "A mobile view extension for developers.",
+    "description": "A chrome mobile view extension for developers.",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
         "service_worker": "App.js"
     },
-    "permissions": ["storage"],
+    "permissions": ["storage", "activeTab", "scripting"],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
