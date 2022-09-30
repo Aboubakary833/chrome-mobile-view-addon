@@ -4,8 +4,26 @@
     <link rel="stylesheet" href="src/css/styles.css">
   </head>
   <body>
+    <header>
+      <div id="i_g">
+        <div id="select_c">
+          <select id="viewport_width">
+            <option value="" selected class="h_op">Click to select a phone viewport width</option>
+            <option value="414">Iphone XR</option>
+            <option value="375">Iphone XS</option>
+          </select>
+        </div>
+        <div id="input_c">
+          <label for="vw">Width: </label>
+          <input type="number" id="vw" placeholder="Ex: 414, 320">
+        </div>
+      </div>
+    </header>
+    
     <div id="container">
-      
+      <x-screen></x-screen>
     </div>
+
+    <script src="src/js/main.js" type="module"></script>
   </body>
 </html>
