@@ -4,7 +4,7 @@
     "version": "1.0",
     "manifest_version": 3,
     "background": {
-        "service_worker": "App.js"
+        "service_worker": "warning.js"
     },
     "permissions": ["storage", "activeTab", "scripting"],
     "action": {
