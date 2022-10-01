@@ -9,11 +9,12 @@ async function init() {
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
     let width = 320
 
-    refresh(width, )
+    refresh(width, tab.url, tab.title)
 
     select.addEventListener('change', function() {
         if(this.value) width = this.value
         input.value = width
+        refresh(width, tab.url, tab.title)
     })
 
     input.addEventListener('change', function() {
@@ -27,7 +28,7 @@ async function init() {
 
 function refresh(width, url) {
 
-    if(url.startWith("chrome://")) {
+    if(url.startsWith("chrome://")) {
         // Show error message in the screen
     }
 
