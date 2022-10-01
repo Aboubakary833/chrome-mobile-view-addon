@@ -7,8 +7,8 @@ async function init() {
     const select = document.getElementById('vw_select')
     const input = document.getElementById('vw_input')
     const [tab] = await chrome.tabs.query({ active: true, currentWindow: true })
-    let width = 320
-
+    let width = 360
+    input.value = width
     refresh(width, tab.url, tab.title)
 
     select.addEventListener('change', function() {
@@ -23,18 +23,17 @@ async function init() {
         } else {
             width = this.value
         }
+        refresh(width, tab.url, tab.title)
     })
 }
 
-function refresh(width, url) {
-
-    if(url.startsWith("chrome://")) {
-        // Show error message in the screen
-    }
-
+function refresh(width, url, title) {
+    const notPage = url.startsWith("chrome://")
     const container = document.getElementById('container')
     const screen = document.createElement('x-screen')
     screen.setAttribute('width', width)
     screen.setAttribute('url', url)
+    screen.setAttribute('title', title)
+    screen.setAttribute('not-page', notPage)
     container.innerHTML = screen.outerHTML
 }

@@ -1,0 +1,2 @@
+console.warn("Some websites or apps like youtube or facebook would not load because they prevent their content from being loaded inside iframe that do not have the required permission.");
+console.warn("X-Frame-Option header of those plateforms value is set to \"DENY\" or \"SAMEORIGIN\".");
