@@ -10,7 +10,7 @@
       <use xlink:href="#path_1" />
     </clipPath>
   </defs>
-  <g id="logo32x32" clip-path="url(#clip_1)">
+  <g id="logo16x16" clip-path="url(#clip_1)">
     <use xlink:href="#artboard_1" stroke="none" fill="#FFFFFF" fill-opacity="0" />
     <g id="Rectangle" artboard="86dc3fea-68bf-4f0d-903a-2a08800281ca">
       <use stroke="none" fill="#EEEEEE" xlink:href="#path_1" fill-rule="evenodd" />
@@ -18,7 +18,7 @@
         <use xlink:href="#path_1" fill="none" stroke="#363636" stroke-width="1" />
       </g>
     </g>
-    <g id="Groupes" transform="translate(4.4000473 0.8999634)" artboard="61912bc3-a197-48d7-8254-de50b31a2ac3">
+    <g id="Groupes" transform="translate(4.7999496 0.8999634)" artboard="61912bc3-a197-48d7-8254-de50b31a2ac3">
       <path d="M1.4491 0.100006L4.9511 0.100006Q5.00062 0.100006 5.04638 0.11896Q5.09214 0.137914 5.12716 0.172936Q5.16219 0.207959 5.18114 0.253718Q5.2001 0.299477 5.2001 0.349006L5.2001 0.351006Q5.2001 0.400535 5.18114 0.446294Q5.16219 0.492053 5.12716 0.527076Q5.09214 0.562098 5.04638 0.581052Q5.00062 0.600006 4.9511 0.600006L1.4491 0.600006Q1.39957 0.600006 1.35381 0.581052Q1.30805 0.562098 1.27303 0.527076Q1.238 0.492053 1.21905 0.446294Q1.2001 0.400535 1.2001 0.351006L1.2001 0.349006Q1.2001 0.299477 1.21905 0.253718Q1.238 0.207959 1.27303 0.172936Q1.30805 0.137914 1.35381 0.11896Q1.39957 0.100006 1.4491 0.100006Z" id="Rectangle-2" fill="#363636" fill-rule="evenodd" stroke="none" />
       <path d="M0 0.3C0 0.134315 0.134315 0 0.3 0C0.465685 0 0.6 0.134315 0.6 0.3C0.6 0.465685 0.465685 0.6 0.3 0.6C0.134315 0.6 0 0.465685 0 0.3Z" id="Ovale" fill="#363636" fill-rule="evenodd" stroke="none" />
     </g>
