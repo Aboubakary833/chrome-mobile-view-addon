@@ -11,9 +11,9 @@
         "default_popup": "popup.html",
         "default_icon": {
             "16": "src/images/get_started16.png",
-            "32": "src/images/get_started32.png",
-            "48": "src/images/get_started48.png",
-            "128": "src/images/get_started128.png"
+            "32": "src/images/logo32x32.svg",
+            "48": "src/images/logo48x48.png",
+            "128": "src/images/logo128x128.svg"
           }
       }
   }
